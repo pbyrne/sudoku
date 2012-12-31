@@ -1,7 +1,9 @@
 module Sudoku
   class Solver
     def self.run
-      puts "Solving your Sudoku puzzle!"
+      new.tap do |solver|
+        solver.run
+      end
     end
   end
 end
